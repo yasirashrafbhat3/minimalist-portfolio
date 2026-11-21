@@ -20,7 +20,7 @@ export const profile = {
   institution: "Atria Institute of Technology, Bengaluru",
   intro:
     "I am an aspiring Data Engineer and AIML student interested in building practical solutions through data, technology, and intelligent systems.",
-  photo: null as string | null,
+  photo: "/profile.png" as string | null,
   photoAlt: "Portrait of Yasir Ashraf Bhat",
 };
 
@@ -106,8 +106,9 @@ export const skills: { group: string; items: string[] }[] = [
  */
 export const contact = {
   github: "https://github.com/yasirashrafbhat3" as string | null,
-  linkedin: null as string | null,
-  email: null as string | null,
+  linkedin: "https://www.linkedin.com/in/yasir-ashraf-bhat-b9196a285/" as string | null,
+  email: "bhatyasir5562@gmail.com" as string | null,
+  instagram: "https://www.instagram.com/ya5ir3/" as string | null,
 };
 
 /* ── Navigation (section ids must match the sections on the page) */
