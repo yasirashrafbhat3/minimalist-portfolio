@@ -1,5 +1,5 @@
 import { ArrowDown, ImageIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/content/portfolio";
 
 export function Hero() {
@@ -38,12 +38,12 @@ export function Hero() {
           <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">{profile.intro}</p>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <Button asChild variant="hero" size="xl">
-              <a href="#projects">View Projects</a>
-            </Button>
-            <Button asChild variant="heroOutline" size="xl">
-              <a href="#contact">Contact Me</a>
-            </Button>
+            <a href="#projects" className={buttonVariants({ variant: "hero", size: "xl" })}>
+              View Projects
+            </a>
+            <a href="#contact" className={buttonVariants({ variant: "heroOutline", size: "xl" })}>
+              Contact Me
+            </a>
           </div>
         </div>
       </div>
